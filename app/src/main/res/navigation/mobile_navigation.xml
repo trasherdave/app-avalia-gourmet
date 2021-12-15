@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.avaliagourmetapp.fragments.home.HomeFragment"
+        android:label="Início"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_map"
+        android:name="com.example.avaliagourmetapp.fragments.buscar.BuscarRestauranteFragment"
+        android:label="Encontrar restaurantes"
+        tools:layout="@layout/fragment_buscar_restaurante" />
+
+    <fragment
+        android:id="@+id/nav_local"
+        android:name="com.example.avaliagourmetapp.fragments.local.LocalFragment"
+        android:label="Minha localização"
+        tools:layout="@layout/fragment_local" />
+
+    <activity
+        android:id="@+id/ac_avaliar"
+        android:name="com.example.avaliagourmetapp.AvaliarActivity"
+        android:label="Nova Avaliação"
+        tools:layout="@layout/activity_avaliar" />
+
+    <activity
+        android:id="@+id/ac_avaliacoes"
+        android:name="com.example.avaliagourmetapp.AvaliacoesActivity"
+        android:label="Minhas Avaliações"
+        tools:layout="@layout/activity_avaliacoes" />
+
+</navigation>

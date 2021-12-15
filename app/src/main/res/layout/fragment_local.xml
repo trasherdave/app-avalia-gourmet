@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fundo_cinza"
+    android:orientation="vertical"
+    tools:context=".fragments.local.LocalFragment">
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lav_android_wave_json"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/map" />
+
+    <ListView
+        android:id="@+id/listviewCEP"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp" />
+
+
+    <Button
+        android:id="@+id/btnMaps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:drawableLeft="@drawable/ic_search"
+        android:onClick="abrirLocalizacao"
+        android:text=" pelo Mapa"
+        android:textStyle="bold" />
+
+
+    <Button
+        android:id="@+id/btnCEP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:drawableLeft="@drawable/ic_search"
+        android:text=" pelo CEP"
+        android:textStyle="bold" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3" />
+
+
+</LinearLayout>
